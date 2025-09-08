@@ -41,11 +41,13 @@ main .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: clamp(260px, 90%, 320px); 
+  width: 100%;              
+  max-width: 300px;         
   background-color: var(--White);
-  padding: clamp(12px, 4vw, 24px);
+  padding: clamp(12px, 4vw, 24px); 
   border-radius: 16px;
 }
+
 
 .card img {
   width: 100%;
