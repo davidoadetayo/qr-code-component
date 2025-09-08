@@ -41,9 +41,9 @@ main .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 300px;
+  width: clamp(260px, 90%, 320px); 
   background-color: var(--White);
-  padding: 16px;
+  padding: clamp(12px, 4vw, 24px);
   border-radius: 16px;
 }
 
@@ -59,7 +59,7 @@ main .container {
   gap: 12px;
 }
 
-.text-container h2 {
+.text-container h1 {
   color: var(--Slate-900);
   font-weight: var(--fw-700);
   line-height: 1.125;
@@ -79,5 +79,5 @@ main .container {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Slate-900);
 }
